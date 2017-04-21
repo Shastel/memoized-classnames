@@ -22,6 +22,6 @@ function defaultMemoize(fn) {
   return memoized;
 }
 
-export default function classNamesCreator(memoize = defaultMemoize) {
+export function classNamesCreator(memoize = defaultMemoize) {
     return memoize(cx);
 }
