@@ -1,16 +1,18 @@
 {
   "name": "memoized-classnames",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./node_modules/.bin/babel -d lib/ index.js",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shastel/memoized-classnames.git"
   },
-  "author": "",
+  "author": "Maxim Shastel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Shastel/memoized-classnames/issues"
@@ -18,5 +20,14 @@
   "homepage": "https://github.com/Shastel/memoized-classnames#readme",
   "dependencies": {
     "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0"
   }
 }
