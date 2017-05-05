@@ -17,6 +17,15 @@
   "bugs": {
     "url": "https://github.com/Shastel/memoized-classnames/issues"
   },
+  "keywords": [
+    "react",
+    "css",
+    "classes",
+    "classname",
+    "classnames",
+    "util",
+    "utility"
+  ],
   "homepage": "https://github.com/Shastel/memoized-classnames#readme",
   "dependencies": {
     "classnames": "^2.2.5"

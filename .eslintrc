@@ -19,6 +19,7 @@
         "no-console": "off",
         "no-restricted-syntax": ["error", "DebuggerStatement", "ForInStatement", "LabeledStatement", "WithStatement"],
         "dot-notation": "off",
-        "import/no-dynamic-require": "off"
+        "import/no-dynamic-require": "off",
+        "import/prefer-default-export": "off"
     }
 }
